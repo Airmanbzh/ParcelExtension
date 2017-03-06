@@ -1,0 +1,27 @@
+{
+	"manifest_version": 2,
+	"name": "Où est mon colis ?",
+	"description": "Cette extension permet de suivre vos colis et d'être notifié lorsque leur position change",
+	"icons":{
+		"128":"images/parcel.png"
+	},
+	"version": "1.0",
+	"browser_action": {
+		"default_icon": {
+			"128": "images/parcel.png"
+		},
+		"default_popup": "tracking.html"
+	},
+	"background": {
+		"persistent": true,
+		"scripts": ["js/jquery-3.1.1.min.js", "js/main.js"]
+	},
+	"web_accessible_resources": [
+		"images/parcel.png"
+	],
+	"permissions": [
+		"notifications",
+		"storage",
+		"<all_urls>"
+	]
+}

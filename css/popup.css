@@ -1,0 +1,52 @@
+h1{
+	font-size:14px;
+	text-align:center;
+}
+form,
+form fieldset{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+
+input{
+	width:200px;
+}
+
+ul,li{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+}
+
+li{
+	padding:2px;
+	color:silver;
+	height:32px;
+	line-height:32px;
+}
+li div{
+	height:32px;
+	line-height:32px;
+}
+li img{
+	display:block;
+	float:left;
+	padding:2px;
+	width:30px;
+	height:30px;
+}
+li a.delete{
+	display:block;
+	float:right;
+	width:16px;
+	color:red;
+}
+li a.delete::after{
+	content:'X';
+}
+li:hover{
+	cursor:pointer;
+	background-color:#e8d8fc;
+	color:black;
+}
