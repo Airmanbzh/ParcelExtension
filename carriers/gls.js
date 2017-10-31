@@ -19,8 +19,10 @@ carriers.add(
 				},
 				function(json)
 				{
-					var subEvent = json.tuStatus[0].history[0].evtDscr;
-					var subComplement = 'Site : ' + json.tuStatus[0].history[0].address.countryName  + ' (' + json.tuStatus[0].history[0].address.countryCode + ')';
+					var events = json.tuStatus[0].progressBar.evtNos.map(function(e) {return e *1;}),
+						evtIndex = events.indexOf(Math.max.apply(null, events)),
+						subEvent = json.tuStatus[0].history[evtIndex].evtDscr,
+						subComplement = 'Site : ' + json.tuStatus[0].history[evtIndex].address.countryName  + ' (' + json.tuStatus[0].history[evtIndex].address.countryCode + ')';
 					
 					if (element.event !== subEvent || element.complement !== subComplement || element.refresh) {
 						element.event = subEvent;
