@@ -120,6 +120,7 @@ chrome.storage.onChanged.addListener(function(){
 carriers.load(function(){
 	carriers.addCarrier('chronopost', './carriers/chronopost.js');
 	carriers.addCarrier('laposte', './carriers/laposte.js');
+	carriers.addCarrier('gls', './carriers/gls.js');
 	var interval = window.setInterval(getTracksUpdate, 60000);
 	window.setTimeout(getManualTracksUpdate, 1000);
 });
