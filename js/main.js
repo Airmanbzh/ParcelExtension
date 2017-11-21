@@ -63,7 +63,7 @@ var showTrackingNotification = function(element)
 			requireInteraction: true,
 			buttons: [
 				{
-					title:'Voir sur le site'
+					title:chrome.i18n.getMessage("gotoSite")
 				}
 			]
 		},

@@ -1,10 +1,18 @@
 $(document).ready(function() {
+	i18n();
+	
 	$('#addTrackingForm').submit(formSubmit);
 	
 	reloadTracking();
 	chrome.storage.onChanged.addListener(reloadTracking);
+	
 });
 
+var i18n = function()
+{
+	$('#title').html(chrome.i18n.getMessage("title"));
+	$('#trackingId').attr('placeholder', chrome.i18n.getMessage("parcelNumber"));
+};
 var formSubmit = function(e)
 {
 	console.log('formSubmit');

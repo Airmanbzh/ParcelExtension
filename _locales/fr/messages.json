@@ -1,0 +1,22 @@
+{
+	"extName":{
+		"message":"Où est mon colis ?",
+		"description":""
+	},
+	"extDescription":{
+		"message":"Cette extension permet de suivre vos colis et d'être notifié lorsque leur position change",
+		"description":""
+	},
+	"title":{
+		"message":"Suivi de colis",
+		"description":""
+	},
+	"parcelNumber":{
+		"message":"Numéro de colis",
+		"description":""
+	},
+	"gotoSite":{
+		"message":"Voir sur le site",
+		"description":""
+	}
+}

@@ -1,11 +1,12 @@
 {
 	"manifest_version": 2,
-	"name": "Où est mon colis ?",
-	"description": "Cette extension permet de suivre vos colis et d'être notifié lorsque leur position change",
+	"name": "__MSG_extName__",
+	"description": "__MSG_extDescription__",
+	"default_locale": "en",
 	"icons":{
 		"128":"images/parcel.png"
 	},
-	"version": "1.0",
+	"version": "1.1",
 	"browser_action": {
 		"default_icon": {
 			"128": "images/parcel.png"

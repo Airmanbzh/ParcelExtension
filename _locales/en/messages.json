@@ -1,0 +1,22 @@
+{
+	"extName":{
+		"message":"Where is my parcel ?",
+		"description":""
+	},
+	"extDescription":{
+		"message":"This extension allow you to follow your parcels and to be notified when their status change",
+		"description":""
+	},
+	"title":{
+		"message":"Follow your parcel",
+		"description":""
+	},
+	"parcelNumber":{
+		"message":"Number of your parcel",
+		"description":""
+	},
+	"gotoSite":{
+		"message":"Show on the website",
+		"description":""
+	}
+}
