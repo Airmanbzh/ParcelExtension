@@ -20,7 +20,7 @@ carriers.add(
 				function(html)
 				{
 					html = $(html);
-					var subEvent = html.find('.tableHistoriqueColis .bandeauText td:nth-child(2)').text().replace('\t','').replace(/ +(?= )/g,'');
+					var subEvent = html.find('.tableHistoriqueColis .bandeauText:first td:nth-child(2)').text().replace('\t','').replace(/ +(?= )/g,'');
 					var subComplement = "";
 					
 					if (element.event !== subEvent || element.complement !== subComplement || element.refresh) {

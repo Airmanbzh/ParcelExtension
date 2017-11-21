@@ -1,5 +1,4 @@
-language: javascript
 script:
     - sudo apt-get install zip
-    - ls -al
-    - zip ParcelExtension.zip ./* -x .\*
+    - zip -r ParcelExtension.zip . -x .\*
+    - "curl -H \"Authorization: Bearer $chrome_web_store_token\" -H \"x-goog-api-version: 2\" -X PUT -T ./ParcelExtension.zip -v https://www.googleapis.com/upload/chromewebstore/v1.1/items/$chrome_web_store_element_id"
