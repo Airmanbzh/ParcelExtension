@@ -122,6 +122,7 @@ carriers.load(function(){
 	carriers.addCarrier('laposte', './carriers/laposte.js');
 	carriers.addCarrier('gls', './carriers/gls.js');
 	carriers.addCarrier('colisprive', './carriers/colisprive.js');
+	carriers.addCarrier('tnt', './carriers/tnt.js');
 	var interval = window.setInterval(getTracksUpdate, 60000);
 	window.setTimeout(getManualTracksUpdate, 1000);
 });
